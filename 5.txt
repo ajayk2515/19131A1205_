@@ -1,0 +1,18 @@
+AIM: To design a document on how to crawl a website site and save the images and text from the website.
+
+COMPONENTS REQUIRED:
+
+1.Cheerio package in npm
+2.fs in npm
+3.request in npm 
+4.VS code
+
+APPROACH:
+
+1.Import all the required modules
+2.send the request to specified URL using request module in node js
+3.These request function has two arguments where first argument is the URL of the web page and secondargument is a function which has error,response,body as parameters
+4.cheerio module is used to parse the HTML.
+5.If any error occured we are going console log the error ,Otherwise we will receive the whole HTML of the page as the reponse
+6.Now the task to extract the useful information  i.e, required images and text by inspecting the elements
+7.saving the data into a file using fs module
